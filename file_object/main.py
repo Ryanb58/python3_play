@@ -32,6 +32,10 @@ print(target.open().read())
 """
 
 # Python 3.4.2
+
+# https://docs.python.org/3.4/library/pathlib.html
+
+
 class CustomPath(type(Path())):
     def open(self, mode='r', buffering=-1, encoding=None, errors=None, newline=None):
         print('Opening a file.')
